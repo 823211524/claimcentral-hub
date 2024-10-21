@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Select } from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Calendar } from "@/components/ui/calendar";
 import { toast } from "sonner";
 
@@ -21,14 +21,14 @@ const BookingForm = () => {
       <div>
         <label htmlFor="provider" className="block text-sm font-medium text-gray-700">Medical Service Provider</label>
         <Select onValueChange={setProvider} value={provider}>
-          <Select.Trigger id="provider">
-            <Select.Value placeholder="Select a provider" />
-          </Select.Trigger>
-          <Select.Content>
-            <Select.Item value="dr-smith">Dr. Smith</Select.Item>
-            <Select.Item value="dr-jones">Dr. Jones</Select.Item>
-            <Select.Item value="central-hospital">Central Hospital</Select.Item>
-          </Select.Content>
+          <SelectTrigger id="provider">
+            <SelectValue placeholder="Select a provider" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="dr-smith">Dr. Smith</SelectItem>
+            <SelectItem value="dr-jones">Dr. Jones</SelectItem>
+            <SelectItem value="central-hospital">Central Hospital</SelectItem>
+          </SelectContent>
         </Select>
       </div>
       <div>
