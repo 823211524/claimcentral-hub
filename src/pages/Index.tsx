@@ -1,12 +1,11 @@
 import React from 'react';
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
-import { BarChart, Users, FileText, AlertCircle } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import Header from '@/components/Header';
 import DashboardStats from '@/components/DashboardStats';
 import RecentClaims from '@/components/RecentClaims';
 import ClaimSearch from '@/components/ClaimSearch';
+import BookingForm from '@/components/BookingForm';
 
 const Index = () => {
   return (
@@ -19,6 +18,14 @@ const Index = () => {
           <RecentClaims />
           <ClaimSearch />
         </div>
+        <Card className="mt-8">
+          <CardHeader>
+            <CardTitle>Arrange Medical Appointment</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <BookingForm />
+          </CardContent>
+        </Card>
       </main>
     </div>
   );
