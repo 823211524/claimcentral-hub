@@ -4,9 +4,9 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 
 const RecentClaims = () => {
   const recentClaims = [
-    { id: '001', name: 'John Doe', date: '2023-05-01', status: 'Pending' },
-    { id: '002', name: 'Jane Smith', date: '2023-04-28', status: 'Approved' },
-    { id: '003', name: 'Bob Johnson', date: '2023-04-25', status: 'Under Review' },
+    { id: '001', name: 'Bernard Matlho', date: '2023-05-01', status: 'Pending' },
+    { id: '002', name: 'Kali Mamonyane', date: '2023-04-28', status: 'Approved' },
+    { id: '003', name: 'Andile Sejamitlwa', date: '2023-04-25', status: 'Under Review' },
   ];
 
   return (
