@@ -25,9 +25,9 @@ const BookingForm = () => {
             <SelectValue placeholder="Select a provider" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="dr-smith">Dr. Smith</SelectItem>
-            <SelectItem value="dr-jones">Dr. Jones</SelectItem>
-            <SelectItem value="central-hospital">Central Hospital</SelectItem>
+            <SelectItem value="dr-boikobo">Dr. Boikobo</SelectItem>
+            <SelectItem value="dr-mokgalong">Dr. Mokgalong</SelectItem>
+            <SelectItem value="dr-lekgowe">Dr. Lekgowe</SelectItem>
           </SelectContent>
         </Select>
       </div>
