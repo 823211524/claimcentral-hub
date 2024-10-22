@@ -16,7 +16,7 @@ const BookAppointment = () => {
   const handleLogout = () => {
     localStorage.removeItem('currentUser');
     toast.success("Logged out successfully");
-    navigate('/login');
+    navigate('/signin');  // Changed from '/login' to '/signin'
   };
 
   return (
