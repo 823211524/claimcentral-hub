@@ -27,14 +27,14 @@ const Login = () => {
     localStorage.setItem('currentUser', username);
     
     toast.success("Login successful");
-    navigate('/book-appointment');
+    navigate('/'); // Redirect to the index page
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center">Login to Arrange Medical Appointment</CardTitle>
+          <CardTitle className="text-2xl font-bold text-center">Claimant Login</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -59,7 +59,7 @@ const Login = () => {
               />
             </div>
             <Button type="submit" className="w-full">
-              Log In & Book Appointment
+              Log In
             </Button>
           </form>
         </CardContent>
